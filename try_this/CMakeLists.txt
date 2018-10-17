@@ -1,5 +1,5 @@
 set (LIB_TYPE "SHARED" CACHE STRING "Change this to STATIC to see no tests being executed")
-add_library (try_this_lib SHARED
+add_library (try_this_lib ${LIB_TYPE}
     "func.cpp"
     "tests.cpp"
     "api.cpp")
